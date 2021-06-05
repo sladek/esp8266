@@ -40,7 +40,7 @@ def connect_and_subscribe():
     client.subscribe(topic_relay2)
     client.subscribe(topic_relay3)
     client.subscribe(topic_relay4)
-    print('Connected to %s MQTT broker')
+    print('Connected to %s MQTT broker'%mqtt_server)
     return client
 
 # This function causes the reset in case of disconnection from MQTT or other errors
