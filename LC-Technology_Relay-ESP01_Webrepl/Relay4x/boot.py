@@ -2,8 +2,8 @@
 import esp
 esp.osdebug(None)
 import network
-#import uos
-#uos.dupterm(None, 1) # disable REPL on UART(0)
+import uos
+uos.dupterm(None, 1) # disable REPL on UART(0)
 import gc
 import webrepl
 import ubinascii
