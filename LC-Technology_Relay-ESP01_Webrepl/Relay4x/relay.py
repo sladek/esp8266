@@ -6,8 +6,7 @@
 # then disconnect the power, push S1 button and power the board.
 # This will swith the board to Mode 2
 # If everything works, then green LED on the LCTech board will 
-# start blinking at the interval of 1s and the relays will also 
-# swich on/off in 1 second's intervals, one by one.
+# start blinking at the interval of 1s.
 #
 import time
 import ubinascii
