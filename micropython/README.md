@@ -80,3 +80,31 @@ You can also connect directly to micrpython via miniterm. Hit multiple time ENTE
 <br/>--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
 
 <br/>>>>
+
+# Enable webrepl:
+<br/>go to python prompt end insert import webrepl_setup
+<br/>>>>import webrepl_setup
+<br/>and follow the instructions.
+<br/>then connect to a WiFi network advertised as MicroPython-*:
+<br/>password is micropythoN
+<br/>(N capitalized)
+<br/>You can download local webrepl from 
+<br/>https://github.com/micropython/webrepl
+<br/>then from the browser call
+<br/>webrepl.html
+<br/>password is the password you defined during webrepl_setup (polypocke)
+<br/>NOTE: You have to stop an application on ESP8266 otherwise keyboard input doesn't work. You can even stop it from webrepl by CTRL-C
+<br/>You can connect ESP8266 to your wifi network:
+<br/>-----
+<br/>import network
+<br/>wlan = network.WLAN(network.STA_IF)
+<br/>wlan.active(True)
+<br/>wlan.connect('o2-WLAN19', '5577325077316577')
+<br/>-----
+<br/>One important thing to note is that the ESP8266 will always remember the last WiFi network it used and attempt to connect automatically on reboot.  This is handy since it means when the ESP8266 boots up it will automatically connect to the last network without you having to run the commands above again.  The board will only remember the last network though and not an entire history of older networks.
+<br/>-----
+<br/>Disable os debug
+<br/>To disable debug output connect to the board's serial REPL and run the following commands:
+<br/>import esp
+<br/>esp.osdebug(None)
+<br/>it can be done in boot.py
