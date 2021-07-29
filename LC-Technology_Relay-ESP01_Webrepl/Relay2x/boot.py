@@ -23,8 +23,13 @@ mqtt_server = 'REPLACE_WITH_YOUR_MQTT_BROKER_IP'
 # Here you can define topic name for each relay
 # like in the following example. You can choose completely 
 # different name for each topic 
-topic_relay1 = b'/myhome/relay_boards/board4x/relay1'
-topic_relay2 = b'/myhome/relay_boards/board4x/relay2'
+topic_relay1 = b'/myhome/relay_boards/board2x/relay1'
+topic_relay2 = b'/myhome/relay_boards/board2x/relay2'
+topic_pub = b'/myhome/relay_boards/board2x/status'
+
+last_message = 0
+message_interval = 5
+counter = 0
 
 client_id = ubinascii.hexlify(machine.unique_id())
 
