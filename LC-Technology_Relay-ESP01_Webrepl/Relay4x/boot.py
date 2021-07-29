@@ -27,6 +27,11 @@ topic_relay1 = b'/myhome/relay_boards/board4x/relay1'
 topic_relay2 = b'/myhome/relay_boards/board4x/relay2'
 topic_relay3 = b'/myhome/relay_boards/board4x/relay3'
 topic_relay4 = b'/myhome/relay_boards/board4x/relay4'
+topic_pub = b'/myhome/relay_boards/board4x/status'
+
+last_message = 0
+message_interval = 5
+counter = 0
 
 client_id = ubinascii.hexlify(machine.unique_id())
 
