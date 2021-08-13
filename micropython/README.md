@@ -33,7 +33,7 @@ rshell - to connect to micropython
 <br/>echo "export EDITOR=nano" >> ~/.bashrc
 
 ## Example of session of editing of the main.py
-----------------------------------------------
+
 <br/>sladekm@bluesTwo:~/Install/ESP8266/Micropython$ rshell -p /dev/ttyUSB0 --editor nano
 <br/>Using buffer-size of 32
 <br/>Connecting to /dev/ttyUSB0 (buffer-size 32)...
@@ -49,7 +49,7 @@ rshell - to connect to micropython
 <br/>Updating /pyboard/main.py ...
 
 ## Example of the session: (Reset the board to make sure that it is not in flash mode)
-----------------------------------------------
+
 sladekm@bluesTwo:~$ rshell -p /dev/ttyUSB0 
 <br/>Using buffer-size of 32
 <br/>Connecting to /dev/ttyUSB0 (buffer-size 32)...
@@ -82,6 +82,7 @@ You can also connect directly to micrpython via miniterm. Hit multiple time ENTE
 <br/>>>>
 
 # Enable webrepl:
+
 <br/>go to python prompt end insert import webrepl_setup
 <br/>>>>import webrepl_setup
 <br/>and follow the instructions.
