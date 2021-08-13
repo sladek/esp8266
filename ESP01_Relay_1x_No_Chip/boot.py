@@ -5,9 +5,9 @@ esp.osdebug(None)
 import gc
 gc.collect()
 
-ssid = 'O2-WiFi-37EF'
-password = 'A6470A52744C'
-mqtt_server = 'nassynology.ddns.net'
+ssid = 'PLACE_YOUR_SID_HERE'
+password = 'PLACE_WIFI_PASSWORD_HERE'
+mqtt_server = 'PLACE_IP_OR_NAME_OF_YOUR MQTT_SERVER'
 #EXAMPLE IP ADDRESS
 #mqtt_server = '192.168.1.144'
 client_id = ubinascii.hexlify(machine.unique_id())
