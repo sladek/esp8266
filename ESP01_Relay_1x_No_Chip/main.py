@@ -1,6 +1,3 @@
-  GNU nano 4.8                                 /tmp/tmp58pr1txi/main.py                                           
-# Complete project details at https://RandomNerdTutorials.com
-
 led = machine.Pin(2, machine.Pin.OUT)
 led.value(1)
 
