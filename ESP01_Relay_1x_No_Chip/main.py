@@ -1,5 +1,5 @@
 import time
-from machine
+import machine
 from umqttsimple import MQTTClient
 
 led = machine.Pin(2, machine.Pin.OUT)
